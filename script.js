@@ -36,7 +36,7 @@ function fetchHandler() {
 
     const area = document.querySelector("[area-select]").selectedOptions[0].text;
     const filterText = document.querySelector("[filter-select]").selectedOptions[0].text;
-    let fetchUrl = "https://spider-search-production.up.railway.app/api/v1/spiders/search?search=" + input + "&area=" + area;
+    let fetchUrl = "http://localhost:8080/api/v1/spiders/search?search=" + input;
 
 
     if (filterText === "Name") {
