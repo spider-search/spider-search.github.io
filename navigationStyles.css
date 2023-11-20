@@ -5,6 +5,8 @@ body {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
     background-color: #333;
     overflow: hidden;
 }
