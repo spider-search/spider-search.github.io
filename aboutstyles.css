@@ -252,3 +252,8 @@ body {
         .column a:hover {
             text-decoration: underline;
         }
+
+        hr {
+                    border: 1px solid #333; /* Dark color for the line */
+                    margin: 20px 0; /* Adjust margin as needed */
+                }
