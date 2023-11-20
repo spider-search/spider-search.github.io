@@ -30,7 +30,14 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="input-group" id="adv-search">
-                    <input type="text" class="form-control" placeholder="Search for spiders" data-search/>
+                    <input type="text" class="form-control" placeholder="Search for spiders" onkeypress="handleKeyPress(event)" data-search/>
+                    <script>
+                        function handleKeyPress(event) {
+                          if (event.keyCode === 13) {
+                            fetchHandler();
+                          }
+                        }
+                    </script>
                     <div class="input-group-btn">
                         <div class="btn-group" role="group">
                             <div class="dropdown dropdown-lg">
