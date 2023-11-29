@@ -58,7 +58,7 @@ function fetchHandler() {
                 const image = card.querySelector(".image");
                 const link = card.querySelector(".link");
                 header.textContent = spider.name;
-                body.textContent = spider.price + spider.currency;
+                body.textContent = spider.price + " " + spider.currency;
                 image.src = spider.image;
                 link.href = spider.link;
                 spiderCardContainer.append(card);
